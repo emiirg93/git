@@ -1,0 +1,90 @@
+git config --global user.name ""
+para configurar de forma global el nombre de usuario.
+
+git config --global user.email ""
+para configurar de forma global el email.
+
+git config --global -e
+para ver las configuraciones globales de mi equipo.
+
+git checkout -- .
+Restaura todo nuestro respositorio hasta el ultimo commit .
+
+git log
+vemos todos los commit hechos hasta el momento.
+
+git reset *.xml
+elimina del staged todos los archivos con extension xml
+
+git add "*.txt"
+agrega todos los archivos txt de todo el proyecto
+
+git add *.txt
+agrega todos los txt en el directorio actual.
+
+log --oneline --decorate --all --graph
+muestra los commit con un hash corto y su mensaje con decoradores.
+
+git config --global alias.s "status -s -b"
+alias.[el alias que le asignamos] "[el comando a ejecutar al llamar ese alias]"
+
+git diff
+Ves por consola los cambios que se hicieron comparando con el ultimo commit.
+
+git diff --staged
+ves los cambios del staged comparandocon el ultimo commit.
+
+git commit -am "mensaje"
+el comando -am se saltea el git add . y directamente agrega todo en el staged, solamente ejecutando el commit.
+
+git commit --amend -m "mensaje actualizado"
+en caso de haber escrito mal el mensaje del commit , se puede modificar con --amend -m
+
+git reset --soft [tag]
+no modifica ni destruye nada , sino revierte a un determinado punto de tu historial de commits.
+
+git reflog 
+ves todos los comit y los viajes en el tiempo que se hizo en el repositorio.
+
+git reset --hard [tag]
+
+git mv [nombre del archivo a renombrar con su extension] [nombre nuevo con su extension]
+renombra y a su vez mueve el archivo si es necesario.
+
+git rm [nombre del archivo]
+elimina un archivo.
+
+git branch [nombre de la nueva rama]
+creas una nueva rama apartir de la rama master.
+
+git branch -d [nombre de la rama a eliminar]
+elimina la rama.
+
+git checkout -b [nombre de la nueva rama]
+creas y te moves a la nueva rama creada.
+
+git tag [nombre del tag]
+creas un tag
+
+git tag -d [nombre del tag a borrar]
+eliminas un tag
+
+git tag -a [nombre del tag] -m "descripcion del tag"
+
+git stash
+guarda las modificaciones en el stash (area temporal)
+
+git stash pop
+devuelve los cambios del stash.
+
+git stash drop
+borra el ultimo elemento del stash guardado.
+
+git show stash 
+muestra mas informacion del ultimo elemento que se agrego al stash.
+
+git stash clear
+borra todos los registros que hay en el stash.
+
+git add -u 
+actualiza el staged.
