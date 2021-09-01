@@ -28,6 +28,9 @@ muestra los commit con un hash corto y su mensaje con decoradores.
 git config --global alias.s "status -s -b"
 alias.[el alias que le asignamos] "[el comando a ejecutar al llamar ese alias]"
 
+git config --global alias.lg
+"log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
 git diff
 Ves por consola los cambios que se hicieron comparando con el ultimo commit.
 
