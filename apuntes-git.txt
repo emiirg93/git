@@ -61,7 +61,10 @@ git branch [nombre de la nueva rama]
 creas una nueva rama apartir de la rama master.
 
 git branch -d [nombre de la rama a eliminar]
-elimina la rama.
+elimina la rama local.
+
+git push origin --delete [nombre de la rama]
+elimina la rama remota.
 
 git checkout -b [nombre de la nueva rama]
 creas y te moves a la nueva rama creada.
